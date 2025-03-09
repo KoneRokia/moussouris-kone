@@ -1,0 +1,14 @@
+#!/bin/bash
+
+user="$(id -u)"
+admin="0"
+
+if [ $user = 100 ]; then 
+	echo "mode user"
+
+else
+	echo "Mode admin"
+
+
+fi
+
