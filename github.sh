@@ -20,7 +20,6 @@ if [ -d .git ]; then
 
 		git add .
 		git commit -m "$commitmessage"
-		git pull
 		git push 
 
 else
@@ -32,7 +31,6 @@ else
 	git commit -m $commitmessage
 	git branch -M main
 	git remote add $repo_url
-	git pull
 	git push -u origin main
 
 fi
